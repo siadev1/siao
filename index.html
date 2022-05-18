@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Mama's Kitchen</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i id="click" class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="bg-image"
+  style=>
+  <div class="mask h-100 ">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div id="card" class="card">
+            <div class="card-body p-5">
+              <h2 class=" mb-5">Join Our Exclusive Club</h2>
+
+              <form class="form" id="form">
+                  <div class="row Success">
+                      <div class="form-outline mb-4">
+                        <input type="text" id="username" placeholder="username"  class="form-control form-control-lg" />
+                        <label class="form-label" for="username">Username</label>
+                        <i class="fas fa-exclamation-circle"></i> 
+                        <i class="fas fa-check-circle"></i>
+                        <small>Error Message</small>
+                      </div>
+                  </div>
+
+                  <div class="row Error">
+                      <div class="form-outline mb-4">
+                        <input type="email" id="email" placeholder="email" class="form-control form-control-lg" />
+                        <label class="form-label" for="email">Your Email</label>
+                        <i class="fas fa-exclamation-circle"></i> 
+                        <i class="fas fa-check-circle"></i>
+                        <small>Error Message</small>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="form-outline mb-4">
+                        <input type="text" id="phoneNumber" placeholder="+234-8012345679" class="form-control form-control-lg" />
+                        <label class="form-label" for="phoneNumber">Phone Number</label>
+                        <i class="fas fa-exclamation-circle"></i> 
+                        <i class="fas fa-check-circle"></i>
+                        <small>Error Message</small>
+                    </div>
+                  </div>
+
+
+                
+
+                  <div class="row">
+                  <div class="form-outline mb-auto">
+
+                    <h6 class="mb-2 pb-1">Gender: </h6>
+  
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                        value="option1" checked />
+                      <label class="form-check-label" for="femaleGender">Female</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                        value="option2" />
+                      <label class="form-check-label" for="maleGender">Male</label>
+                    </div>
+               
+            </div>
+
+  
+
+                <div class="row">
+                    <div class="form-outline mb-4">
+                          <input type="password" id="thePassword" placeholder="thePassword" class="form-control form-control-lg" />
+                          <label class="form-label" for="thePassword">Password</label>
+                          <span class="eye" onclick="thisPassword()">
+                            <i id="hide1" class="fa-solid fa-eye"></i>
+                              <i id="hide2" class="fa-solid fa-eye-slash"></i>
+                            </span>
+                          <i class="fas fa-exclamation-circle"></i> 
+                          <i class="fas fa-check-circle"></i>
+                          <small>Error Message</small>
+                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-outline mb-4">
+                      <input type="password" id="confirmPassword" placeholder="confirmPassword" class="form-control form-control-lg" />
+                      <label class="form-label" for="confirmPassword">Confirm password</label>
+                      <span class="eye" onclick="checkPassword()">
+                        <i id="hide3" class="fa-solid fa-eye"></i>
+                        <i id="hide4"  class="fa-solid fa-eye-slash"></i>
+                      </span> 
+                      <i class="fas fa-exclamation-circle"></i> 
+                      <i class="fas fa-check-circle"></i>
+                      <small>Error Message</small>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-check d-flex justify-content-center mb-5">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                      <label class="form-check-label" for="form2Example3g">
+                       
+                        I agree all statements in <a href="#!"><u>Terms of service</u></a>
+                      </label>
+                    </div>
+                </div>
+
+                <div class="row">                    
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-success btn-lg ">Submit</button>
+                     </div> 
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>    
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
